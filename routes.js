@@ -6,6 +6,9 @@ var products = [
     { id: 1, nama: 'Indomie', hpp: 5000, untung: 20, hargaJual: 6250, stok: 10, kategori: 'Makanan' },
     { id: 2, nama: 'Teh Pucuk', hpp: 3000, untung: 20, hargaJual: 3750, stok: 20, kategori: 'Minuman' },
 ];
+router.get('/', function (req, res) {
+    res.json("Try /api/products to get products");
+});
 router.get('/products', function (req, res) {
     res.json(products);
 });

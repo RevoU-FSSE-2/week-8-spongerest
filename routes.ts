@@ -18,7 +18,11 @@ let products: Produk[] = [
     { id: 2, nama: 'Teh Pucuk',hpp : 3000,untung:20,hargaJual:3750,stok:20,kategori:'Minuman' },
     ];
 
-router.get('/products', (req:Request, res:Response) => {
+    router.get('/', (req: express.Request, res: express.Response) => {
+        res.json("Try /api/products to get products");
+});  
+
+    router.get('/products', (req:Request, res:Response) => {
         res.json(products);
 });
 
