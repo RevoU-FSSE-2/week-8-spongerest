@@ -22,9 +22,9 @@ router.get('/products', (req:Request, res:Response) => {
         res.json(products);
 });
 
-router.get('/products/:id', (req:Request, res:Response) => {
-    const id = parseInt(req.params.id);
-    const product = products.find((p) => p.id === id);
+router.get('/products/:nama', (req:Request, res:Response) => {
+    const nama = String(req.params.nama);
+    const product = products.find((p) => p.nama === nama);
     if (product) {
     res.json(product);
     } else {
@@ -67,20 +67,20 @@ router.put('/products/:id', (req:Request, res:Response) => {
     }
 });
 
-router.patch('/products/:id', (req:Request, res:Response) => {
-    const id = parseInt(req.params.id);
-    const productIndex = products.findIndex((p) => p.id === id);
-    if (productIndex !== -1) {
-        const updatedProduct: Produk = {
-        ...products[productIndex],
-        ...req.body,
-        };
-        products[productIndex] = updatedProduct;
-        res.json(updatedProduct);
-    } else {
-        res.status(404).json({ message: 'Produk tidak ditemukan' });
-    }
-    });  
+// router.patch('/products/:id', (req:Request, res:Response) => {
+//     const id = parseInt(req.params.id);
+//     const productIndex = products.findIndex((p) => p.id === id);
+//     if (productIndex !== -1) {
+//         const updatedProduct: Produk = {
+//         ...products[productIndex],
+//         ...req.body,
+//         };
+//         products[productIndex] = updatedProduct;
+//         res.json(updatedProduct);
+//     } else {
+//         res.status(404).json({ message: 'Produk tidak ditemukan' });
+//     }
+//     });  
 
 router.delete('/products/:id', (req:Request, res:Response) => {
     const id = parseInt(req.params.id);
