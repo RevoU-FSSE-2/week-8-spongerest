@@ -1,5 +1,7 @@
 # Membuat CRUD Serverside Menggunakan Express JS
 
+## Ini Halaman Home dari Link yang sudah saya Deploy https://w8-nger-production.up.railway.app/api
+
 ### Di sini saya melakukan import sesuai dengan apa yang saya butuhkan untuk memenuhi tugas di W8, dan saya juga menentukan port untuk bisa diakses nantinya
 
 ![alt text](/asset/1.png)
@@ -32,7 +34,7 @@
 
 ![alt text](/asset/10.png)
 
-### Ini contoh saat Get Data by Name dengan menambahkan /:nama pada bagian akhir alamat url sebelumnya (http://localhost:3000/api/products/Indomie) (https://w8-nger-production.up.railway.app/products/Indomie) atau (http://localhost:3000/api/products/Teh%20Pucuk) (https://w8-nger-production.up.railway.app/products/Teh%20Pucuk)
+### Ini contoh saat Get Data by Name dengan menambahkan /:nama pada bagian akhir alamat url sebelumnya (http://localhost:3000/api/products/Indomie) (https://w8-nger-production.up.railway.app/api/products/Indomie) atau (http://localhost:3000/api/products/Teh%20Pucuk) (https://w8-nger-production.up.railway.app/products/Teh%20Pucuk)
 
 ![alt text](/asset/11.png)
 
